@@ -114,7 +114,26 @@ Kumar has developed a strong, well-rounded technical skillset across modern web 
 Final Note:
 Kumar’s skills aren’t just theoretical—they’ve been applied in real projects and internships where he’s delivered measurable results. His tech stack reflects adaptability, and his mindset is all about continuous learning and contribution.
 
-Certifications:
+What kind of tech role is Kumar intrested in?:
+Kumar is deeply passionate about roles that allow him to build, learn, and contribute meaningfully to real-world tech solutions. Here are the kinds of opportunities he’s most excited about:
+
+🔧 Full-Stack Developer
+Loves contributing to both user-facing features and backend logic, bringing cohesive and well-rounded solutions to life.
+
+
+🧠 Backend Developer
+Enjoys designing logical systems, managing data flow, and creating robust APIs that serve as the backbone of scalable applications.
+
+⚙️ Software Engineer (Web/Cloud)
+Drawn to solving real-world problems through clean, efficient code and thoughtful system design — with a focus on building products that are impactful and reliable.
+
+🤖 AI/ML Roles
+Curious about intelligent systems and eager to explore how automation and data-driven models can improve user experiences and decision-making.
+
+🚀 Startup & Innovation Environments
+Especially drawn to high-growth, collaborative teams where he can wear multiple hats, learn fast, and grow with the product.
+
+In short: Kumar is looking for roles where he can code with purpose, learn from great mentors, and contribute to projects that make a real difference. He’s not just looking for a job — he’s looking for a challenge to grow into.
 
 Volunteering:
 
@@ -126,24 +145,8 @@ Kumar’s Contact Details
 🔗 LinkedIn: https://www.linkedin.com/in/kumar-gajmer-04942b2a2/
 💻 GitHub: https://github.com/gajmerK11
 
-# Examples:
-# User: Who is Rishi Raj Sharma?
-
-# Lucy: Rishi Raj Sharma is a tech enthusiast focused on cloud, security, and AI. He has a strong IT background, enjoys team projects, and participates in hackathons. In his free time, he likes football, trekking, gym workouts, and good food.
-
-# User: What kind of projects has Rishi worked on?
-
-# Lucy: Rishi developed an AI-powered portfolio with an interactive chatbot using Streamlit and prompt engineering. He also created a "Smart Dermatologist" tool for skin disease identification using image processing and CNN, and "Vulnerable VM: Rage," a CTF challenge hosted on Azure Cloud.
-
-# User: Can you tell me about Rishi's industry experience?
-
-# Lucy: Rishi interned at Dell Technologies, developing API orchestration features and chatbots. He also automated order management with machine learning. At NoShitSecurity, he developed and deployed Azure cloud infrastructure and hosted a global CTF event.
-
-# User: What are some of Rishi's achievements?
-
-# Lucy: Rishi won the Dell Hackathon 2022 and Cybersecurity Hackathon 2021. He excelled in CTF competitions like Hope 2022 and Tempus 2022. He also received the National Service Scheme Best Volunteer 2022 award.
 """
-general_prompt = ["Who is Kumar?", "What are Kumar's skills?", "What are Kumar's projects?", "What are Kumar's achievements?", "What are Kumar's certifications?", "How can I contact Kumar?", "What are Kumar's industry experiences?", "What kind of tech role is Kumar intrested in?", "What are Kumar's blog posts?"]
+general_prompt = ["Who is Kumar?", "What are Kumar's skills?", "What are Kumar's projects?", "How can I contact Kumar?", "What are Kumar's industry experiences?", "What kind of tech role is Kumar intrested in?"]
 
 def configure_genai():
     """Configure the generative AI model."""
