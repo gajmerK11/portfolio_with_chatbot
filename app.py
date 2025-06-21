@@ -18,9 +18,7 @@ with st.sidebar:
             "Skills",
             "Education",
             "Projects",
-            # "Achivements",
-            # "Volunteering",
-            # "Blog",
+            "Resume",
             "Contact",
         ],
         icons=[
@@ -30,9 +28,7 @@ with st.sidebar:
             "tools",
             "book half",
             "clipboard",
-            # "trophy fill",
-            # "heart",
-            # "pencil square",
+            "file-earmark-person",
             "envelope",
         ],
         menu_icon="mortarboard",
@@ -67,9 +63,6 @@ pages = {
     "Skills": "_pages/Skills.py",
     "Education": "_pages/Education.py",
     "Projects": "_pages/Projects.py",
-    # "Achivements": "_pages/Achivements.py",
-    # "Volunteering": "_pages/Volunteering.py",
-    # "Blog": "_pages/Blog.py",
     "Contact": "_pages/Contact.py",
 }
 
@@ -78,3 +71,28 @@ page_file = pages.get(choose)
 if page_file:
     with open(page_file, encoding="utf-8") as file:
         exec(file.read())
+
+elif choose == "Resume":
+    import base64
+    from pathlib import Path
+
+    st.title("Resume")
+    # st.write("Click the button to download a full copy of the resume.")
+
+    resume_path = "assets/resume.pdf"
+
+    with open(resume_path, "rb") as f:
+        resume_data = f.read()
+
+    st.download_button(
+        label="📄 Download Resume PDF",
+        data=resume_data,
+        file_name="Kumar_Gajmer_Resume.pdf",
+        mime="application/pdf"
+    )
+
+    # # Display the embedded PDF
+    # base64_pdf = base64.b64encode(resume_data).decode("utf-8")
+    # pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="1000px" type="application/pdf"></iframe>'
+    # st.markdown("---")
+    # st.markdown(pdf_display, unsafe_allow_html=True)
