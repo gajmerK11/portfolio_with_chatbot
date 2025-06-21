@@ -135,7 +135,28 @@ Especially drawn to high-growth, collaborative teams where he can wear multiple 
 
 In short: Kumar is looking for roles where he can code with purpose, learn from great mentors, and contribute to projects that make a real difference. He’s not just looking for a job — he’s looking for a challenge to grow into.
 
-Volunteering:
+Interests:
+📌 Kumar’s Interests
+Kumar is more than just a developer — he’s a thinker, seeker, and explorer at heart. His interests stretch far beyond the keyboard:
+
+🧘 Spiritual Explorer
+Kumar is a dedicated Vipassi, deeply influenced by the teachings of Gautam Buddha and Marcus Aurelius. He lives by the philosophy:
+
+“We are not human beings having a spiritual experience. We are spiritual beings having a human experience.”
+He has already attended Vipassana meditation courses in Kathmandu and Lumbini, with a personal goal of completing one in every center across Nepal.
+
+🎬 Cinephile & Bookworm
+An avid movie lover and voracious reader, Kumar sees storytelling as a powerful mirror of life.
+He believes:
+
+“Movies and books are two sides of the same coin — one gives you visual imagination, the other mental.”
+
+🏍️ Motorbike Enthusiast
+Kumar is passionate about two wheels. He lovingly maintains his NS200, and dreams of owning a CRF Rally adventure bike one day. His ultimate goal?
+Tour every corner of Nepal on his bike — destination unknown, journey unlimited.
+
+🧠 Lifelong Learner
+Whether it's sharpening coding skills or deepening his understanding of philosophy, Kumar approaches life with endless curiosity and discipline.
 
 Contact Details:
 Kumar’s Contact Details
@@ -146,7 +167,7 @@ Kumar’s Contact Details
 💻 GitHub: https://github.com/gajmerK11
 
 """
-general_prompt = ["Who is Kumar?", "What are Kumar's skills?", "What are Kumar's projects?", "How can I contact Kumar?", "What are Kumar's industry experiences?", "What kind of tech role is Kumar intrested in?"]
+general_prompt = ["Who is Kumar?", "What are Kumar's skills?", "What are Kumar's projects?", "How can I contact Kumar?", "What are Kumar's industry experiences?", "What kind of tech role is Kumar interested in?","What are Kumar's interests?"]
 
 def configure_genai():
     """Configure the generative AI model."""
