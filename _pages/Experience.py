@@ -15,7 +15,38 @@ restapi_img = image_to_base64("images/restapi.png")
 javascript_img = image_to_base64("images/javascript.png")
 react_img = image_to_base64("images/reactjs.png")
 
-# Build your full markdown content with embedded images
+# Custom CSS styles for professional polish
+custom_css = """
+<style>
+.tech-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.tech-item {
+    text-align: center;
+}
+.tech-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+.tech-item img:hover {
+    transform: scale(1.1);
+}
+.tech-label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+</style>
+"""
+
+# Full markdown content
 sample_markdown = f"""
 # INDUSTRY EXPERIENCE
 Brief overview of my experience till date.
@@ -26,28 +57,27 @@ Brief overview of my experience till date.
 </br>
 ``May-Jul 2024``
 <div style='text-align: justify'><b>
-<li>
-Developed and maintained web applications using the Django framework during a 3-month internship at Techmauri, improving application performance and user experience by 20%.</li><br>
-
-<li> Collaborated with the development team to design and implement RESTful APIs, supporting client requirements for data integration and enabling seamless communication between front-end and back-end systems.</li><br> 
-
+<li>Developed and maintained web applications using the Django framework during a 3-month internship at Techmauri, improving application performance and user experience by 20%.</li><br>
+<li>Collaborated with the development team to design and implement RESTful APIs, supporting client requirements for data integration and enabling seamless communication between front-end and back-end systems.</li><br> 
 <li>Debugged and optimized the existing Django codebase as part of ongoing project enhancements, leading to a 15% reduction in page load times and smoother functionality.</li><br>
-</b>
-</div>
+</b></div>
 
 Technologies Used
 --
 <b>Technologies Used</b><br>
-<!-- .slide: data-background-color="#283747" -->
-<div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
-  <div style="text-align: center;">
-    <img src="{python_img}" alt="Python" style="width:80px;"><br>Python
+{custom_css}
+<div class="tech-container">
+  <div class="tech-item">
+    <img src="{python_img}" alt="Python">
+    <div class="tech-label">Python</div>
   </div>
-  <div style="text-align: center;">
-    <img src="{django_img}" alt="Django" style="width:80px;"><br>Django
+  <div class="tech-item">
+    <img src="{django_img}" alt="Django">
+    <div class="tech-label">Django</div>
   </div>
-  <div style="text-align: center;">
-    <img src="{restapi_img}" alt="RESTful APIs" style="width:80px;"><br>RESTful APIs
+  <div class="tech-item">
+    <img src="{restapi_img}" alt="RESTful APIs">
+    <div class="tech-label">RESTful APIs</div>
   </div>
 </div>
 
@@ -58,47 +88,27 @@ Technologies Used
 </br>
 `Dec-Mar 2024`
 <div style='text-align: justify'><b>
-<li> Built and maintained responsive web applications using React.js and other related technologies, ensuring cross browser compatibility and performance optimization.</li><br>
-
+<li>Built and maintained responsive web applications using React.js and other related technologies, ensuring cross browser compatibility and performance optimization.</li><br>
 <li>Collaborated with designers, product managers, and developers to deliver high-quality, user-centric features.</li><br> 
-
-<li> Participated in code reviews, shared feedback, and adhered to best practices for clean, maintainable code.</li><br> 
-</b>
-</div>
+<li>Participated in code reviews, shared feedback, and adhered to best practices for clean, maintainable code.</li><br> 
+</b></div>
 
 Technologies Used
 --
 <b>Technologies Used</b><br>
-<!-- .slide: data-background-color="#283747" -->
-<div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
-  <div style="text-align: center;">
-    <img src="{javascript_img}" alt="JavaScript" style="width:80px;"><br>JavaScript
+{custom_css}
+<div class="tech-container">
+  <div class="tech-item">
+    <img src="{javascript_img}" alt="JavaScript">
+    <div class="tech-label">JavaScript</div>
   </div>
-  <div style="text-align: center;">
-    <img src="{react_img}" alt="React.js" style="width:80px;"><br>React.js
+  <div class="tech-item">
+    <img src="{react_img}" alt="React.js">
+    <div class="tech-label">React.js</div>
   </div>
 </div>
 
----
 
-## Nobel Learning PBC
-`Intern`
-</br>
-`May-Present (Remote) 2025`
-<div style='text-align: justify'><b>
-<li>Participating in a structured program focused on enhancing soft skills essential for a professional IT environment.</li><br>
-
-<li> Developing leadership qualities by taking initiative in group tasks and leading small project components.</li><br> 
-</b>
-</div>
-
-Skills Learned
---
-<b>Skills Learned</b><br>
-<!-- .slide: data-background-color="#283747" -->
-<div style="text-align: justify;">
-Soft skills enhancement, Leadership, Public Speaking, Collaboration, Team work, Networking
-</div>
 """
 
 # Display the Reveal Slides
