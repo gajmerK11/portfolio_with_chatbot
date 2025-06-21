@@ -1,24 +1,25 @@
 import streamlit as st
+from PIL import Image
 
-st.title("💼 SKILLS")
+def combine_images(image_paths, image_size=(100, 100), gap=20):
+    images = [Image.open(path).resize(image_size) for path in image_paths]
 
-def render_image(name, path):
-    return f"""
-    <div style="text-align: center;">
-        <img src="{path}" style="width:64px;height:64px;object-fit:contain;" />
-        <div style="font-size: 12px; margin-top: 4px;">{name}</div>
-    </div>
-    """
+    total_width = sum(img.width for img in images) + gap * (len(images) - 1)
+    max_height = max(img.height for img in images)
 
-# Helper function to create a section with logos
-def display_skill_section(subheading, logos):
-    st.subheader(subheading)
-    cols = st.columns(len(logos))
-    for col, (name, path) in zip(cols, logos):
-        with col:
-            st.image(path, caption=name, use_container_width=True)
+    combined = Image.new('RGBA', (total_width, max_height), (255, 255, 255, 0))
 
-# Example local image paths (replace with your actual image paths or URLs)
+    x_offset = 0
+    for img in images:
+        combined.paste(img, (x_offset, 0))
+        x_offset += img.width + gap
+
+    return combined
+
+# ------------------------
+# SKILLS DATA
+# ------------------------
+
 programming_languages = [
     ("Python", "images/python.png"),
     ("JavaScript", "images/javascript.png"),
@@ -42,7 +43,22 @@ tools = [
     ("Postman", "images/postman.png"),
 ]
 
-# Display each skill section
+# ------------------------
+# DISPLAY FUNCTION
+# ------------------------
+
+def display_skill_section(title, logos):
+    st.subheader(title)
+    image_paths = [path for name, path in logos]
+    combined = combine_images(image_paths, gap=20)
+    st.image(combined)
+
+# ------------------------
+# RENDER ALL SECTIONS
+# ------------------------
+
+st.title("💼 SKILLS")
+
 display_skill_section("🧠 Programming Languages", programming_languages)
 display_skill_section("🧩 Frameworks", frameworks)
 display_skill_section("🗃️ Database Technologies", databases)
