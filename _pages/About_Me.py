@@ -2,7 +2,7 @@
 right_column, left_column = st.columns([1, 2])
 with right_column:
     st.markdown("<br>", unsafe_allow_html=True)
-    st.image(r"images/profile.jpg", use_container_width=True)
+    st.image(r"images/profile.jpg", use_column_width=True)
 
 with left_column:
     st.title("About Me")

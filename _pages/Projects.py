@@ -35,7 +35,7 @@ with left_column:
     )
     st.markdown("----")
 
-    st.image("images/micro_ecommerce.png", use_container_width=True)
+    st.image("images/micro_ecommerce.png", use_column_width=True)
     st.markdown("### Micro eCommerce")
     st.markdown(
         "<div style='text-align: justify'>"
