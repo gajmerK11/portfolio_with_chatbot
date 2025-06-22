@@ -3,7 +3,6 @@
 Welcome to my personal portfolio website, developed using Python with Streamlit to create a seamless, data-driven web interface and integrated with an AI-powered assistant. This site highlights my professional background, technical skills, and projects — with a conversational chatbot to answer your questions interactively.
 
 🌐 **Live Demo**: https://kumar-gajmer.onrender.com
-📂 **Project Folder**: `portfolio_with_chatbot/`
 
 ---
 
