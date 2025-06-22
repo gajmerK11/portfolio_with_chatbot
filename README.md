@@ -16,6 +16,8 @@ Welcome to my personal portfolio website, developed using Python with Streamlit 
 - Integrated into the Streamlit sidebar
 - Real-time chat experience with a personalized tone
 
+![Lucy AI Chatbot Demo](lucy12.gif)
+
 ### 🖥️ Streamlit Web Interface
 
 - **Modern UI** with `streamlit_option_menu` and `streamlit_pills`
