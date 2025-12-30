@@ -567,7 +567,7 @@ if not st.session_state.messages:
 
 display_messages()
 
-# Display pills if none selected
+# Display pills - always visible
 if not st.session_state.pill_selected:
     selected_pill = pills("", general_prompt, index=None)
     if selected_pill:
