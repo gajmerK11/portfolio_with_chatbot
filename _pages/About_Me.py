@@ -1,3 +1,5 @@
+import streamlit as st
+
 # Define the left and right columns
 right_column, left_column = st.columns([1, 2])
 with right_column:
