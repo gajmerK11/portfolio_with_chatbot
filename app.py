@@ -96,3 +96,4 @@ elif choose == "Resume":
     # pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="1000px" type="application/pdf"></iframe>'
     # st.markdown("---")
     # st.markdown(pdf_display, unsafe_allow_html=True)
+
